@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="small_font">12sp</dimen>
+    <dimen name="normal_font">16sp</dimen>
+    <dimen name="larg_font">18sp</dimen>
+    <dimen name="xlarg_font">20sp</dimen>
+    <dimen name="xxlarg_font">25sp</dimen>
+    <dimen name="header_font_size">15sp</dimen>
+    <dimen name="pargraph_font">14sp</dimen>
+    <dimen name="igap_font_size">45sp</dimen>
+    <dimen name="drawer_font_size">30sp</dimen>
+    <dimen name="very_small_padding_margin">2dp</dimen>
+    <dimen name="small_padding_margin">5dp</dimen>
+    <dimen name="normal_padding_margin">10dp</dimen>
+    <dimen name="larg_padding_margin">20dp</dimen>
+    <dimen name="xlarg_padding_margin">30dp</dimen>
+    <dimen name="xxlarg_padding_margin">40dp</dimen>
+
+    <!-- Splash_1 dimen -->
+
+    <dimen name="app_icon_img_width_height_sp1">160dp</dimen>
+    <dimen name="splash_cloud_height_sp1">220dp</dimen>
+
+    <!-- Splash_2 dimen -->
+
+    <dimen name="app_icon_img_width_height_sp2">130dp</dimen>
+    <dimen name="ll_height_sp2">170dp</dimen>
+    <dimen name="app_icon_img_height_sp2">50dp</dimen>
+    <dimen name="image_rl">160dp</dimen>
+    <dimen name="rl_height_sp2">200dp</dimen>
+    <dimen name="rl_width_sp2">40dp</dimen>
+    <dimen name="btn_width_sp2">120dp</dimen>
+
+    <!-- splash_3 dimen -->
+
+    <dimen name="splash_cloud_img_width_height">100dp</dimen>
+    <dimen name="app_icon_height">130dp</dimen>
+
+    <!-- <splash_5 dimen -->
+
+    <dimen name="ll_height_sp5">150dp</dimen>
+    <dimen name="min_h">40dp</dimen>
+    <dimen name="view_h">30dp</dimen>
+    <dimen name="tiny_font">10sp</dimen>
+
+    <!-- Cropper -->
+
+    <dimen name="border_thickness">3dp</dimen>
+    <dimen name="corner_thickness">5dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+    <dimen name="target_radius">24dp</dimen>
+    <dimen name="snap_radius">3dp</dimen>
+    <dimen name="corner_length">20dp</dimen>
+
+    <!-- Crop -->
+
+    <dimen name="crop__bar_height">56dp</dimen>
+
+    <!-- Switch Compact -->
+
+    <dimen name="switch_compat_thumb_margin">4dp</dimen>
+    <dimen name="switch_compat_thumb_size">22dp</dimen>
+    <dimen name="switch_compat_thumb_stroke_width">2dp</dimen>
+    <dimen name="switch_compat_track_radius">7dp</dimen>
+    <dimen name="switch_compat_track_stroke_width">2dp</dimen>
+
+</resources>

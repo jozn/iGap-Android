@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:background="@color/light_green"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:background="@null"
+                android:gravity="top|center_horizontal"
+                android:layoutDirection="ltr"
+                android:text="@string/fa_angle_left"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/drawer_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.32"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <com.iGap.customviews.RoundImageViewWhite
+                android:id="@+id/img_user_icon"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                android:gravity="center_vertical"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.38"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:gravity="bottom"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/txt_user_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.9"
+                    android:gravity="bottom"
+                    android:text="@string/user_name_en"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:layoutDirection="ltr" >
+
+                <TextView
+                    android:id="@+id/txt_user_last_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/lastseen_en"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_font" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btn_nav"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:background="@null"
+                android:gravity="top|center_horizontal"
+                android:layoutDirection="ltr"
+                android:text="@string/fa_navicon"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarg_font" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:layoutDirection="ltr"
+        android:orientation="vertical"
+        android:weightSum=".5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/txt_phone_num"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|bottom"
+                    android:text="+98245412441"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/maingrey"
+                    android:textSize="@dimen/header_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/txt_user_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/user_name_en"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/maingrey"
+                    android:textSize="@dimen/header_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/light_orang"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.45"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/txt_last_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/last_location_en"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/maingrey"
+                    android:textSize="@dimen/header_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.55"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="top"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_location_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fa_map_marker"
+                        android:textColor="@color/maingrey"
+                        android:textSize="@dimen/drawer_font_size" />
+
+                    <TextView
+                        android:id="@+id/txt_user_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/dp10"
+                        android:text="iran,malayer"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/maingrey"
+                        android:textSize="@dimen/header_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:layoutDirection="ltr"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:layoutDirection="ltr" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/txt_list_ul"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.1"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/fa_list_ul"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/orang"
+                        android:textSize="@dimen/xlarg_font" />
+
+                    <TextView
+                        android:id="@+id/txt_time_line"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="5dp"
+                        android:text="@string/view_timeline_en"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/header_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/txt_bell_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/fa_bell_o"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/orang"
+                        android:textSize="@dimen/xlarg_font" />
+
+                    <TextView
+                        android:id="@+id/txt_notification"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".85"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/notification_sound_en"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/header_font_size" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:showText="true"
+                        android:switchMinWidth="70dp"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:thumb="@drawable/switch_compact_thumb"
+                        android:track="@drawable/switch_compat_track" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/up_ll_shared_media"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/txt_puzzle_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/fa_puzzle"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/orang"
+                        android:textSize="@dimen/xlarg_font" />
+
+                    <TextView
+                        android:id="@+id/txt_shared"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="5dp"
+                        android:text="@string/shared_media_en"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/header_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:gravity="right"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:id="@+id/ll_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

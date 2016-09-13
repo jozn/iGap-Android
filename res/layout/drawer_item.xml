@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="@dimen/dp220"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:background="@color/light_green"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.85"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                android:weightSum="12.3" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_dashboard_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_navicon"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/xxlarg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_dashboard"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/dashboard_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/xlarg_font" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_createchat"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.25"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_create_chat_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_comments"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_create_chate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/create_new_chat_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_creategroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_crate_group_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_group"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_create_group"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/create_new_group_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_createchannel"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_create_chanel_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_rss"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_create_chanel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/create_new_chanel_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_searchchannel"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_search_chanel_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_search"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_search_chanel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/search_channels_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.09" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_contactlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.45"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_contact_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_list_ul"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_contact_list"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/contact_list_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_invitefriends"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.45"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_invite_friend_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_slideshare"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_invite_friend"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/invite_friend_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_setting_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_gear"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_setting"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/settings_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_privacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_privacy_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_shield"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_privacy"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/privacy_policy_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_chat_whih_support"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_icon_chat_whih_support"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_chat_with"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_chat_whih_support"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.65"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/chat_with_support_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:layoutDirection="ltr"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_chat_whih_support_count"
+                                android:layout_width="@dimen/dp30"
+                                android:layout_height="@dimen/dp30"
+                                android:background="@drawable/circletxt"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:text="25"
+                                android:textAlignment="gravity"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/normal_font" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_drawer_faq"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_faq_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/fa_question_circle"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/larg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_faq"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/faq_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                android:weightSum="1" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="0.05"
+            android:gravity="right"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

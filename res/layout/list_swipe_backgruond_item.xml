@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp15"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="bottom"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/tx_channel_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:focusable="false"
+                        android:text="@string/fa_group"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/blacktransparent"
+                        android:textSize="@dimen/xlarg_font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="bottom"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/tx_our_channel"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:focusable="false"
+                        android:gravity="left|center"
+                        android:singleLine="true"
+                        android:text="Asghar Omreeii"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/blacktransparent"
+                        android:textSize="@dimen/header_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tx_first_persent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:focusable="false"
+                    android:text="105KB"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/blacktransparent"
+                    android:textSize="@dimen/small_font" />
+
+                <TextView
+                    android:id="@+id/tx_channel_des"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="@string/description_en"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/blacktransparent"
+                    android:textSize="@dimen/small_font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layoutDirection="ltr"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn_alarm"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:background="@drawable/alarm_box"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/fa_bell"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xlarg_font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <Button
+                        android:id="@+id/btn_clearhistory"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:background="@drawable/edit_box"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:text="@string/fa_eraser"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xlarg_font" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <Button
+                        android:id="@+id/btn_delete5"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:background="@drawable/delete_box"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:text="@string/fa_trash"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xlarg_font" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

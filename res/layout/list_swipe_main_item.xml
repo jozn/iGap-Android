@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="false"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="false"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/img_user_icon"
+        android:layout_width="@dimen/pic_icon"
+        android:layout_height="@dimen/pic_icon"
+        android:layout_marginLeft="@dimen/small_padding_margin"
+        android:background="@drawable/rect_shape"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/larg_padding_margin"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tx_channel_icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:text="@string/fa_rss"
+                        android:textColor="@color/maingrey"
+                        android:textSize="@dimen/xlarg_font" />
+
+                    <TextView
+                        android:id="@+id/tx_our_channel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/larg_padding_margin"
+                        android:focusable="false"
+                        android:text="Asghar Omreeii"
+                        android:textColor="@color/maingrey"
+                        android:textSize="@dimen/larg_font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tx_first_persent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:text="105KB"
+                        android:textColor="@color/blacktransparent"
+                        android:textSize="@dimen/small_font" />
+
+                    <TextView
+                        android:id="@+id/tx_channel_des2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_padding_margin"
+                        android:focusable="false"
+                        android:text="@string/channel_description_en"
+                        android:textColor="@color/maingrey"
+                        android:textSize="@dimen/small_font" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tx_user_lorem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_padding_margin"
+                    android:focusable="false"
+                    android:text="Lorem Ipsum is simiply dummy text"
+                    android:textColor="@color/blacktransparent"
+                    android:textSize="@dimen/small_font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tx_alarm_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:focusable="false"
+                    android:text="@string/fa_bell"
+                    android:textColor="@color/maingrey"
+                    android:textSize="@dimen/normal_font" />
+
+                <TextView
+                    android:id="@+id/tx_is_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:focusable="false"
+                    android:text="@string/online_en"
+                    android:textColor="@color/light_green"
+                    android:textSize="@dimen/tiny_font" />
+
+                <TextView
+                    android:id="@+id/tx_meot_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/meot_2_box"
+                    android:focusable="false"
+                    android:text="1455"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tiny_font" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_delete_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/add_box"
+                        android:focusable="false"
+                        android:text="@string/fa_delete"
+                        android:textColor="@color/red_normal"
+                        android:textSize="@dimen/xxlarg_font" />
+
+                    <Button
+                        android:id="@+id/btn_add"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/normal_padding_margin"
+                        android:background="@drawable/add_box"
+                        android:focusable="false"
+                        android:text="@string/fa_plus"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/xxlarg_font" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/delete_btn_box"
+                    android:focusable="false"
+                    android:text="@string/deleted_en"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/small_font" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/larg_padding_margin"
+            android:background="@color/grey_a"
+            android:focusable="false" />
+    </LinearLayout>
+
+</LinearLayout>

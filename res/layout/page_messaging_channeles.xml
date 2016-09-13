@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/lyt_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+<android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_message_channels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="vertical" >
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/lyt_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_empty"
+                android:layout_width="@dimen/dp300"
+                android:layout_height="@dimen/dp300"
+                android:src="@drawable/channels" />
+
+            <TextView
+                android:id="@+id/txt_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_channel_subscribe_en"
+                android:textColor="@color/maingrey"
+                android:textSize="@dimen/pargraph_font" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

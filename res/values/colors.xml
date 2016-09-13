@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="maingrey">#666666</color>
+    <color name="light_gray">#999999</color>
+    <color name="gray">#e6e6e6</color>
+    <color name="graylight">#f5f5f5</color>
+    <color name="grey_transparent">#99e6e6e6</color>
+    <color name="grey_transparent_t">#eee6e6e6</color>
+    <color name="grey_a">#e4e4e4</color>
+    <color name="gray_dark">#bfbfbf</color>
+    <color name="grey_a_tr">#80E4E4E4</color>
+    <color name="grey_bold">#444444</color>
+    <color name="grey_bold_tl">#10444444</color>
+    <color name="standard_gray">#7f7f7f</color>
+    <color name="light_green">#2bbfbd</color>
+    <color name="light_green_tr">#1e2bbfbd</color>
+    <color name="green_transparent">#99224444</color>
+    <color name="green_light">#99cc33</color>
+    <color name="green">#33cc99</color>
+    <color name="black">#000000</color>
+    <color name="blacktransparent">#99000000</color>
+    <color name="blacktransparent_a">#50000000</color>
+    <color name="blacktransparent_b">#00000000</color>
+    <color name="orang">#f2b33d</color>
+    <color name="light_orang">#33f2b33d</color>
+    <color name="orang_normal">#ffe7bb</color>
+    <color name="orang_a">#ff9933</color>
+    <color name="red_light">#e6556f</color>
+    <color name="red_normal">#cc2920</color>
+    <color name="violet">#cc33ff</color>
+    <color name="violet_light">#f0bfbc</color>
+    <color name="yellow">#ffcc00</color>
+    <color name="yellow_tr">#55ffcc00</color>
+    <color name="yellow_color">#f2b33d</color>
+    <color name="blue_a">#9999ff</color>
+    <color name="blue_b">#00ccff</color>
+
+    <!-- Cropper -->
+
+    <color name="white_translucent">#AAFFFFFF</color>
+    <color name="black_translucent">#B0000000</color>
+    <color name="border">@color/white_translucent</color>
+    <color name="guideline">@color/white_translucent</color>
+    <color name="corner">@android:color/white</color>
+    <color name="surrounding_area">@color/black_translucent</color>
+
+    <!-- Crop -->
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+
+</resources>

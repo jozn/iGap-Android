@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical" 
+        android:layout_gravity="center_horizontal|center_vertical" >
+
+    <VideoView
+        android:id="@+id/video_player"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal|center_vertical" 
+        android:layout_gravity="center_horizontal|center_vertical" />
+
+</LinearLayout>

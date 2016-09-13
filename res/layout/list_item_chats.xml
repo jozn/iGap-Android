@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:layoutDirection="ltr"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_first_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:background="@color/white"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10" >
+
+        <com.iGap.customviews.RoundImageViewWhite
+            android:id="@+id/img_avatar_chat"
+            android:layout_width="@dimen/pic_icon"
+            android:layout_height="@dimen/pic_icon"
+            android:layout_gravity="bottom" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight=".9" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.4"
+                        android:gravity="bottom"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_icon_chat"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="left|center"
+                            android:text="@string/fa_user"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/maingrey"
+                            android:textSize="@dimen/xlarg_font" />
+
+                        <TextView
+                            android:id="@+id/txt_name_chat"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.75"
+                            android:gravity="left|center"
+                            android:text="Asghar Omreeii"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/maingrey"
+                            android:textSize="@dimen/header_font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layoutDirection="ltr"
+                        android:orientation="vertical"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_last_message_chat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="Lorem Ipsum is simiply dummy text"
+                            android:textColor="@color/blacktransparent"
+                            android:textSize="@dimen/small_font" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp10" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="right|center"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/txt_sound_chat"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="right|center"
+                            android:text="@string/fa_user"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/maingrey"
+                            android:textSize="@dimen/larg_font" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:layoutDirection="ltr"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txt_unread_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/meot_2_box"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="17"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_font" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:layoutDirection="ltr"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txt_last_seen_chat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/online_en"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/light_green"
+                            android:textSize="@dimen/small_font" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_a"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_second_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="left|bottom"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/tx_swip_icon_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:focusable="false"
+                        android:text="@string/fa_user"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/blacktransparent"
+                        android:textSize="@dimen/xlarg_font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="bottom|left"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/tx_our_channel_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:focusable="false"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="Asghar Omreeii"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/blacktransparent"
+                        android:textSize="@dimen/header_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tx_first_persent_chat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:focusable="false"
+                    android:gravity="left|top"
+                    android:text="105KB"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/blacktransparent"
+                    android:textSize="@dimen/small_font" />
+
+                <TextView
+                    android:id="@+id/tx_channel_des_chat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:focusable="false"
+                    android:gravity="left|top"
+                    android:singleLine="true"
+                    android:text="@string/description_en"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/blacktransparent"
+                    android:textSize="@dimen/small_font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layoutDirection="ltr"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn_alarm_chat"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:background="@drawable/alarm_box"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/fa_bell"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xlarg_font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <Button
+                        android:id="@+id/btn_clearhistory_chat"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:background="@drawable/edit_box"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:text="@string/fa_eraser"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xlarg_font" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <Button
+                        android:id="@+id/btn_delete5_chat"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:background="@drawable/delete_box"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:text="@string/fa_trash"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xlarg_font" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

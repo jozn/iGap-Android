@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <Button
+        android:id="@+id/btn_edite_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/dp40"
+        android:paddingLeft="10dp"
+        android:paddingRight="50dp"
+        android:text="@string/edit_group_en"
+        android:textSize="@dimen/normal_font" />
+
+    <Button
+        android:id="@+id/btn_left_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/dp40"
+        android:paddingLeft="10dp"
+        android:paddingRight="50dp"
+        android:text="@string/left_group_en"
+        android:textSize="@dimen/normal_font" />
+
+    <Button
+        android:id="@+id/btn_clear_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/dp40"
+        android:paddingLeft="10dp"
+        android:paddingRight="50dp"
+        android:text="@string/clear_history_en"
+        android:textSize="@dimen/normal_font" />
+
+    <Button
+        android:id="@+id/btn_group_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/dp40"
+        android:paddingLeft="10dp"
+        android:paddingRight="50dp"
+        android:text="@string/group_info_en"
+        android:textSize="@dimen/normal_font" />
+
+    <Button
+        android:id="@+id/btn_add_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/dp40"
+        android:paddingLeft="10dp"
+        android:paddingRight="50dp"
+        android:text="@string/add_member_en"
+        android:textSize="@dimen/normal_font" />
+
+</LinearLayout>

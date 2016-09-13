@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_green"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:text="@string/fa_angle_left"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/drawer_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView_str_addcontact"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:gravity="center|left"
+                android:text="@string/add_contacts_en"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarg_font"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@null"
+                android:text="@string/fa_check"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarg_font" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="@color/white"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal" >
+
+        <com.iGap.customviews.RoundImageViewWhite
+            android:id="@+id/img_reply"
+            android:layout_width="@dimen/pic_icon"
+            android:layout_height="@dimen/pic_icon"
+            android:layout_margin="@dimen/attachicon"
+           
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/attachicon"
+            android:layout_weight="6"
+            android:layoutDirection="ltr"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pic_icon"
+                android:layoutDirection="ltr"
+                android:gravity="left|center"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/txt_replay_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="+9891335658987"
+                    android:textColor="@color/maingrey"
+                    android:textSize="@dimen/normal_font" />
+
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:background="@color/white"
+        android:gravity="top|center"
+        android:layoutDirection="ltr"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/attachicon"
+            android:layout_marginLeft="@dimen/attachicon"
+            android:layout_marginRight="@dimen/attachicon"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/first_name_required_en"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/normal_font" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/attachicon"
+            android:layout_marginRight="@dimen/attachicon"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/last_name_optional_en"
+            android:paddingBottom="5dp"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/normal_font" />
+    </LinearLayout>
+
+</LinearLayout>

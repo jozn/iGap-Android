@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/light_green"
+        android:gravity="center"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/sm_btn_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/fa_angle_left"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xxlarg_font"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".65"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sm_txt_Shared_media"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="@string/shared_media_en"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarg_font" />
+
+            <Button
+                android:id="@+id/sm_btn_select_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="left|center"
+                android:text="@string/arrow_down"
+                android:textColor="@color/white"
+                android:textSize="@dimen/larg_font"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sm_txt_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="12566"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xlarg_font" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/sm_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="@dimen/dp80"
+        android:descendantFocusability="blocksDescendants"
+        android:numColumns="auto_fit" >
+    </GridView>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+   
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/graylight"
+            android:gravity="right"
+            android:layoutDirection="ltr"
+            android:paddingTop="15dp"
+            android:weightSum="5" >
+
+            <TextView
+                android:id="@+id/textView_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/fa_camera"
+                android:textColor="@color/green_light"
+                android:textSize="@dimen/xxlarg_font" />
+
+            <TextView
+                android:id="@+id/textView_sience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/fa_picture"
+                android:textColor="@color/violet"
+                android:textSize="@dimen/xxlarg_font" />
+
+            <TextView
+                android:id="@+id/textView_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/video"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/xxlarg_font" />
+
+            <TextView
+                android:id="@+id/textView_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/music"
+                android:textColor="@color/blue_a"
+                android:textSize="@dimen/xxlarg_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/graylight"
+            android:gravity="right"
+            android:layoutDirection="ltr"
+            android:paddingBottom="15dp"
+            android:paddingTop="20dp"
+            android:weightSum="5" >
+
+            <TextView
+                android:id="@+id/textView_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/phone"
+                android:textColor="@color/orang_a"
+                android:textSize="@dimen/xxlarg_font" />
+
+            <TextView
+                android:id="@+id/textView_folder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/folder"
+                android:textColor="@color/blue_b"
+                android:textSize="@dimen/xxlarg_font" />
+
+            <TextView
+                android:id="@+id/textView_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/fa_map_marker"
+                android:textColor="@color/red_normal"
+                android:textSize="@dimen/xxlarg_font" />
+
+            <TextView
+                android:id="@+id/textView_paint5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/paint"
+                android:textColor="@color/green"
+                android:textSize="@dimen/xxlarg_font" />
+        </LinearLayout>
+        
+        
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="11" >
+
+            <TextView
+                android:id="@+id/textView_down"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="@string/arrow_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xxlarg_font" />
+        </LinearLayout>
+        
+             
+             
+             
+    </LinearLayout>
+
+</FrameLayout>

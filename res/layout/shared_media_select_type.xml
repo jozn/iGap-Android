@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/smst_txt_Shared_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared Media"
+        android:textSize="@dimen/larg_font" />
+
+    <TextView
+        android:id="@+id/smst_txt_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/image_en"
+        android:textSize="@dimen/larg_font" />
+
+    <TextView
+        android:id="@+id/smst_txt_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/video_en"
+        android:textSize="@dimen/larg_font" />
+
+    <TextView
+        android:id="@+id/smst_txt_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/voice_en"
+        android:textSize="@dimen/larg_font" />
+
+    <TextView
+        android:id="@+id/smst_txt_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/file_en"
+        android:textSize="@dimen/larg_font" />
+
+</LinearLayout>

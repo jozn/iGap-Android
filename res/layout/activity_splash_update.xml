@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:background="@color/orang"
+        android:gravity="center"
+        android:layoutDirection="ltr"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/aso_app_icon_img"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp150"
+                    android:src="@drawable/splash_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.55"
+                android:gravity="bottom|center"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp20" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr" >
+
+                    <TextView
+                        android:id="@+id/aso_app_name_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="i"
+                        android:textColor="@color/maingrey"
+                        android:textSize="@dimen/drawer_font_size" />
+
+                    <TextView
+                        android:id="@+id/aso_app_name_tx_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gap"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/drawer_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/aso_limitless_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr"
+                    android:text="Limitless Connection"
+                    android:textColor="@color/maingrey"
+                    android:textSize="@dimen/normal_font" />
+
+                <TextView
+                    android:id="@+id/aso_company_name_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RooyeKhat Media Co Ltd."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_font" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layoutDirection="ltr"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/aso_sp1_img_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/splash_cloud_1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1.2" >
+
+        <TextView
+            android:id="@+id/aso_txt_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center|bottom"
+            android:text="@string/attention_en"
+            android:textColor="@color/orang"
+            android:textSize="@dimen/xxlarg_font"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aso_txt_igap_version"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="@string/your_igap_version_is_old_en"
+            android:textColor="@color/maingrey"
+            android:textSize="@dimen/xlarg_font" />
+
+        <TextView
+            android:id="@+id/aso_txt_update_to"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="@string/please_update_to_continue_en"
+            android:textColor="@color/maingrey"
+            android:textSize="@dimen/xlarg_font" />
+
+        <TextView
+            android:id="@+id/aso_txt_site_address"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            
+            android:text="www.igap.im"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/normal_font" />
+    </LinearLayout>
+
+</LinearLayout>

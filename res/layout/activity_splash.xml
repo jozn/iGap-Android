@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:gravity="center"
+        android:layoutDirection="ltr"
+        android:orientation="vertical" >
+
+       
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+               android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/app_icon_img"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp120"
+                    android:src="@drawable/splash_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layoutDirection="ltr" >
+
+                    <TextView
+                        android:id="@+id/app_name_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="i"
+                        android:textColor="@color/maingrey"
+                        android:textSize="@dimen/igap_font_size" />
+
+                    <TextView
+                        android:id="@+id/app_name_tx_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gap"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/igap_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/limitless_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr"
+                    android:text="Limitless Connection"
+                    android:textColor="@color/maingrey"
+                    android:textSize="@dimen/xxlarg_font" />
+
+                <TextView
+                    android:id="@+id/company_name_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RooyeKhat Media Co Ltd."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/larg_font" />
+            </LinearLayout>
+        </LinearLayout>
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.35"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <RelativeLayout
+            android:id="@+id/image_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/text_ll"
+            android:layout_weight="1.01"
+            android:layoutDirection="ltr" >
+
+            <ImageView
+                android:id="@+id/sp1_img_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/splash_cloud_1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

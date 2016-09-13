@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:padding="@dimen/dp30" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/fa_remove"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xxlarg_font" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/fa_check"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xxlarg_font" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/graylight"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10" >
+
+                <RadioButton
+                    android:id="@+id/radio_aAooow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="aAooow" />
+
+                <RadioButton
+                    android:id="@+id/radio_BBAlert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="BBAlert" />
+
+                <RadioButton
+                    android:id="@+id/radio_Boom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="Boom" />
+
+                <RadioButton
+                    android:id="@+id/radio_Bounce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="Bounce" />
+
+                <RadioButton
+                    android:id="@+id/radio_DooDoo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="DooDoo" />
+
+                <RadioButton
+                    android:id="@+id/radio_igap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="igap" />
+
+                <RadioButton
+                    android:id="@+id/radio_Jing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="Jing" />
+
+                <RadioButton
+                    android:id="@+id/radio_LiLi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="LiLi" />
+
+                <RadioButton
+                    android:id="@+id/radio_Msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="Msg" />
+
+                <RadioButton
+                    android:id="@+id/radio_New"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="New" />
+
+                <RadioButton
+                    android:id="@+id/radio_onelime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="onelime" />
+
+                <RadioButton
+                    android:id="@+id/radio_Tone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="Tone" />
+
+                <RadioButton
+                    android:id="@+id/radio_woow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="woow" />
+
+                <RadioButton
+                    android:id="@+id/radio_none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/none" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
